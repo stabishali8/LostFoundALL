@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.recordlistview.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tVcantFindItem">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recylcerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="745dp"
+            tools:layout_editor_absoluteY="-51dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tVcantFindItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="Can't find your item ?"
+        android:textSize="22sp"
+        android:paddingBottom="32dp"
+        android:layout_alignBottom="@+id/tvGiveDescription"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:id="@+id/tvGiveDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give us a description of your item"
+        android:layout_above="@+id/button2"
+        android:paddingBottom="12dp"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Add a lost item"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        />
+</RelativeLayout>
